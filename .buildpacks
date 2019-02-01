@@ -1,0 +1,5 @@
+https://github.com/sunny4381/heroku-buildpack-linuxbrew.git
+https://github.com/emk/heroku-buildpack-rust.git
+https://github.com/HashNuke/heroku-buildpack-elixir.git
+https://github.com/heroku/heroku-buildpack-nodejs#v83
+
