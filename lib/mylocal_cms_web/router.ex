@@ -25,5 +25,8 @@ defmodule MylocalCmsWeb.Router do
   scope "/api", MylocalCmsWeb do
     pipe_through :api
     resources "/locations", LocationController, except: [:new, :edit]
+    resources "/overviews", OverviewController, except: [:new, :edit]
+    resources "/hotels", HotelController, except: [:new, :edit]
+    resources "/attributes", AttributeController, except: [:new, :edit]
   end
 end
