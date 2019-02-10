@@ -12,7 +12,7 @@ use Mix.Config
 
 config :mylocal_cms, MylocalCmsWeb.Endpoint,
   load_from_system_env: true,
-  url: [host: "grouchy-crowded-asianelephant.gigalixirapp.com", port: 4000],
+  url: [host: "${SECRET_KEY_BASE}.gigalixirapp.com", port: System.get_env("PORT") || "80"],
   cache_static_manifest: "priv/static/cache_manifest.json",
   server: true,
   secret_key_base: "${SECRET_KEY_BASE}"
